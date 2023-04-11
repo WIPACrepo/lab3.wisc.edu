@@ -1,0 +1,1203 @@
+/* WIPAC Customizations to ST Octoban template */
+sup { vertical-align: super; font-size: smaller; line-height:0; }
+sub { vertical-align: sub; font-size: smaller; line-height:0; }
+
+strong {
+  font-weight:bold;
+  color:#404040;
+}
+
+span.dates-on-blocks {
+  font-size: 11pt;
+}
+
+span.pubs-authors-format {
+  font-size: 11pt;
+}
+/* margins on inine block elements (e.g. tables/imaegs in text) */
+
+table { margin: 4px; margin-bottom:1.1em !important; }
+/*place table captions at the bottom*/
+table caption { 
+  caption-side: bottom; 
+  font-size: 90%; 
+  text-align: left; 
+  line-height: 1.2em; 
+  padding-top: 10px; 
+  font-style: italic;
+}
+
+.node img { /*margin: 0px 5px;*/ }
+.caption.none img { margin: 0; }
+.node [style*='float:left'], 
+.node [style*='float: left'],
+.cke_editable [style*='float:left'], 
+.cke_editable [style*='float: left']
+  { margin: 0.4em 1em 0 0; }
+.node [style*='float:right'],
+.node [style*='float: right'],
+.cke_editable [style*='float:right'], 
+.cke_editable [style*='float: right'] { margin: 0.4em 0px 0 1em; }
+figure.caption img { margin: 0; max-width:100%; padding:10px; height:auto !important;}
+figure br { display: none; }
+.caption figcaption {
+  font-size:90%;
+  margin-bottom:1.1em;
+  text-align:left; 
+  line-height:1.2em; 
+  padding-left:10px; 
+  font-style: italic; 
+  display:none;
+}
+
+.caption.cke_widget_element figcaption {
+  display:block !important;
+}
+
+.caption {
+  max-width:100%;
+  /*display:table;*/
+}
+/*
+figure + p  { margin-bottom: 0.7em; border: 1px solid orange; }
+*/
+
+p {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/*override ckeditor style attributes*/
+p > span > span > span > span[style] {
+  font-family: 'PT Sans' !important;
+  line-height: 1.5 !important;
+  color: #666 !important;
+} 
+
+article.node-article .field-name-body { padding-left: 0 !important; }
+/* util classes*/
+.small-caps { font-variant: small-caps; }
+.all-caps { text-transform: uppercase; }
+
+/* octoban customizations */
+
+.one_half + .one_half { margin: 0; }
+
+/*
+.clean td { border: none;  }
+.clean tr { background: transparent !Important; }
+.cke_editable .clean:before { content: 'NOTE: the dashed lines and this message will show only in the editor for this table style (clean)'; font-size: 75%; font-style: italic; color: gray; border: 1px dashed gray;}
+.cke_editable .clean td { border: 1px dashed gray; }
+*/
+
+
+/* FRONT PAGE */
+
+/* get rid of weird corner thumbnails on MD sliders */
+.md-strips-container { display: none; }
+
+/* NEWS STYLES */
+.view .date-nav-wrapper .date-next {
+  display:inline !important;
+}
+
+.date-prev {
+  display:inline !important;
+}
+
+.block-views .view-blog 
+.view-content 
+{ /*width: 60px;*/ }
+.block-views .view-blog { }
+.block-views .view-blog { }
+.block-views .view-blog { }
+.block-views .view-blog { }
+/*
+.view-list-articles.list-article-medium .views-row .views-field-field-image, .view-list-articles.list-article-medium .views-row .views-field-field-image img, .view-list-articles.list-article-medium .views-row .views-field-field-embedded-media iframe {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+*/
+
+.recent-news-sidebar-title {
+  padding-bottom: 0 !important;
+}
+
+.recent-news-sidebar-title a {
+  font-size: 100% !important;
+  color: #98b5cd !important;
+  padding-bottom: 0;
+}
+.recent-news-sidebar-date {
+  font-style: italic;
+  color: #999;
+  padding-bottom: 10px;
+}
+
+.featured-news-title a {
+  font-size: 180%;
+}
+
+.view-list-articles  .wipac-news-page h2 {
+
+}
+
+.wipac-news-index .views-field-field-image img { 
+  margin-top: 10px;
+  margin-bottom: 1px; 
+}
+
+.list-article-archive .views-field-created,
+.list-article-archive .views-field-field-tags { clear: both; width: 180px; margin-top: 1em; }
+
+.project-field-taxonomy {
+  display:inline;
+}
+
+/*remove unwanted info from taxonomy page*/
+#tax-total {
+  display:none;
+}
+
+.wipac-news-index .views-field-title { 
+  margin-top: 0;
+  margin-left: -2px;
+  padding-top: 0;
+  padding-bottom: 0 !important; 
+  line-height: 32px;
+  /* height: 32px; must change if header size changes */
+}
+
+.wipac-news-index .views-field-field-byline { 
+  font-size: 75%; 
+  color: gray;
+  margin-top: -4px;
+  margin-bottom: 8px; 
+}
+
+.wipac-news-index .views-more-link { margin-left: 10px; }
+.wipac-news-index .views-field-created { clear: left; }
+.wipac-news-index .views-field-field-tags, 
+.wipac-news-index .views-field-created { 
+  margin-top: 12px; 
+}
+.wipac-news-index .views-field-field-tags {
+  clear: right
+  }
+
+.article-title {
+  font-size: 160%;
+  color: #0073a1;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 150%;
+  font-family: 'PT Sans';
+}
+.node-article-top-information,
+article.node-article .field-name-field-byline { font-size: 100%; margin-bottom: 1em; }
+
+
+/*news main page*/
+
+.news-recent-image-wrap {
+  display: table;
+}
+
+.news-recent-image-wrap img {
+  vertical-align: middle;
+  padding-right: 10px;
+  display: table-cell;
+}
+.news-recent-image-wrap span {
+  vertical-align: top;
+  display: table-cell;
+}
+/*
+.wipac-news-page .region-content section.block-views,
+.front .region-content section.block-views,
+.front .region-content section.block-block
+{ width: 45%; display: inline-block; vertical-align: top; margin-right: 35px; }
+*/
+
+/*
+.tbl-even-width { width: 100%; }
+.tbl-even-width td { width: 1800px; } 
+*/
+/* this should be a value greater than the max width of our content area. The trick is that the cells are larger than the entire table, so the table layout algorithm sizes them all the same as best it can (equal columns) */
+
+.noborder { border: none; }
+.noborder td { border: none !important; }
+.noborder-children * {  border: none; }
+
+
+.stack-image { display: none; }
+
+.filmstrip .item-list li { display: inline-block; margin: 5px; }
+.filmstrip .item-list .first { margin-left: 0px; }
+.filmstrip ul { width: 50%; display: inline-block; }
+
+.cke_editable { margin: 20px; }
+
+.pub-date-main { padding: 1em; width: 50px;}
+
+#edit-field-pubdate-value-max-wrapper {margin-top:15px;}
+
+table tbody tr:nth-of-type(odd) { background: transparent; }
+table th { font-weight: bold; text-align: left; }
+/*color: red; }*/
+
+.tbl-even { table-layout: fixed; }
+.tbl-plain { border: none !important; }
+.tbl-plain td { border: none !important; }
+.tbl-plain th { border: none !important; }
+
+.tbl-col-header td { border-top: 2px solid #bbb; border-bottom: 2px solid #bbb; }
+.tbl-col-header { border: 2px solid #bbb; }
+
+.tbl-row-header, 
+.tbl-row-header td
+{ border-left: 2px solid #bbb; border-right: 2px solid #bbb; }
+.tbl-row-header tr:last-child td { border-bottom: 2px solid #bbb; }
+
+
+.tbl-plain td { border: none;  }
+.tbl-plain tr { background: transparent !Important; }
+.cke_editable .tbl-plain td { border: 1px dashed gray !important; }
+.cke_editable .tbl-plain th { border: 1px dashed gray !important; }
+
+
+.tbl-grid td:last-child {  border-right: 2px solid #bbb; }
+.tbl-grid tr:last-child td {  border-bottom: 2px solid #bbb; }
+.tbl-grid thead tr th:first-child {  border-top: none !important; border-left: none !important;}
+/*
+table:after { content: "class=(" attr(class) ")"; border: none !important;  background: beige; width: 200px;}
+*/
+
+/* add ".nock" class to elements to not display them in editor window */
+.cke_editable .nock { display: none; }
+
+
+/* even height tables */
+.r450  td { height: 400px; }
+.r400  td { height: 400px; }
+.r350  td { height: 350px; }
+.r300  td { height: 300px; }
+.r250  td { height: 250px; }
+.r200  td { height: 200px; }
+.r150  td { height: 150px; }
+.r100  td { height: 100px; }
+.r80 td { height: 80px; }
+.r60 td { height: 60px; }
+.r40 td { height: 40px; }
+.r20 td { height: 20px; }
+
+table p { margin-bottom: 0; }
+
+.tbl-dashed-borders ,
+.tbl-dashed-borders td { border: 1px dashed gray; } 
+
+th { color: rgb(50,50, 50); font-weight: bold; font-size:105%; }
+
+thead th[scope=row] { border: none !important; }
+th[scope=row] + th[scope=col] { border-left: 2px solid #bbb; }
+table th[scope=col] { border-bottom: 2px solid #bbb; border: 2px solid #bbb; }
+table th[scope=col]:last-child { border-right: 2px solid #bbb; }
+table th[scope=col]:last-child { border-right: 2px solid #bbb; }
+
+
+table th[scope=row] { border-right: 2px solid #bbb; border: 2px solid #bbb; }
+table tbody tr:first-child  th[scope=row] { border-top: 2px solid #bbb; }
+table tbody tr:last-child th[scope=row] { border-bottom: 2px solid #bbb; }
+
+
+table thead tr th[scope=col]:first-child { border-left: 2px solid #bbb; }
+/*
+.region-content section.block-views { width: 45%; display: inline-block; vertical-align: top; margin-right: 35px; }
+
+/*
+ * .news-list { margin-top: -80px; }
+ * .views-field-body * { vertical-align: top; }
+ * .views-field-title { clear: both; font-size:170%; font-weight: bold; margin-bottom: -2px; margin-top: 1.7em; line-height:28px; }
+ * .news-view-image img { float: left; margin-top: 0.5em; margin-right: 0.25em; } 
+ * .news-date { font-style: italic; opacity: 0.8; font-size: 80%; display: block; }
+ * .news-list ul, .news-list ul li  { margin-left: 0; margin-top 2em; list-style-type:none; clear:both; }*/
+
+
+
+.one-half, .one-third, .two-third, .three-fourth, .one-fourth {
+    float: left;
+    margin-bottom: 20px;
+	padding: 0;
+	margin-bottom: 0;
+    margin-right: 4%;
+    position: relative;
+}
+.one-half.last, .one-third.last, .two-third.last, .three-fourth.last, .one-fourth.last {
+  margin-right: 0;
+}
+.one-half {
+  width: 48%;
+}
+.one-third { 
+  width: 30.6666%;
+}
+.two-third {
+  width: 65.3332%;
+}
+.one-fourth {
+  width: 22%;
+}
+/*
+.wipac-publications-index .search-form > div > .form-item { width: 24%; display: inline-block; vertical-align: top; }
+*/
+.wipac-publications-index .search-form > div { padding-left: 50px; vertical-align: top; }
+
+.form-item-custom-search-types-c-portfolio, .form-item-custom-search-types-c-team-member,.form-item-custom-search-types-c-visitor {
+  display:none;
+}
+
+.search-info {
+  display:none;
+}
+
+.search-snippet {
+  display:block;
+  margin-left:20px;
+}
+
+#icon-wrapper {
+  float:left;
+  padding-right:5px;
+}
+
+#news-title-and-date {
+  font-size:100%;
+}
+
+.views-field .views-field-title {
+  font-size:100%;
+}
+
+.node-publication .field div { display: inline-block; }
+.node-publication .field-label { width: 120px; vertical-align: top; }
+.node-publication .field-items { max-width: 80%; }
+
+.media-collection-item-wrapper { padding-bottom: 1%; }
+.media-collection-item-wrapper .media-gallery-item img { margin: 0; }
+
+.media-gallery-media .media-gallery-item { border: none !important; }
+.media-gallery-media-item-thumbnail .meta-wrapper {
+  padding: 0 4%;
+}
+
+/*gallery stuff*/
+
+.gallery-content-wrapper {
+ /* padding-left: 12.5%;
+  padding-right: 12.5%;*/
+}
+
+/*make title text white*/
+
+.galleries-title a{
+color:#fff !important;
+
+}
+
+.featured-gallery-img-wrap img {
+}
+
+.views-field-title-gallery {
+  text-transform:uppercase;
+  font-size: 120%;
+}
+
+.page-title a{
+  color:#fff !important;
+}
+/*featured gallery stuff*/
+.featured-gallery {
+  text-align:center;
+  width:100%;
+}
+.views-field-field-cover-photo {
+  display:inline;
+
+}
+
+.gallery-tile-display {
+  text-align:center;
+  padding: 10px;
+
+}
+
+.gallery-photo-display {
+  width: 360px;
+}
+
+
+.gallery-tile-display a{
+  padding: 1px !important;
+}
+.featured-gallery-photo {
+
+  /*text-align:center;*/
+}
+
+.jbac-number {
+  /*height:200px;
+  width: 35px !important;*/
+}
+
+.jb-cap-content a {
+  color: #0374A7 !important;
+}
+
+.add-to-cal-event .date-display-single {
+  display:none;
+}
+
+.three_fourth .date-display-single {
+  display:none;
+}
+
+#block-views-events-list-block h2 {
+  text-align:center;
+  padding-left: 
+
+}
+.events-wrapper {
+  padding-left: 0%;
+  float:center;
+}
+.events-wrapper .one_fourth {
+  width: 27%;
+  text-align: right;
+  margin-left: 0%;
+  margin-right: 1%;
+}
+
+.events-wrapper .three_fourth.last {
+  width:66%;
+}
+
+.events-wrapper-main-page {
+  margin-bottom:1.5em;
+}
+
+.dates-on-blocks {
+  font-size: 11pt;
+}
+
+#nodisplay {
+  display:none;
+}
+
+
+/*.view-list-members .views-field-field-member-image-new-size .field-more-link { text-align: left !important; }
+.view-list-members .field-more-link a,
+.view-list-memebrs .field-more-link .field-project { display: block; width:
+100%; position: relative; top: 4px; color: white;
+text-indent: 0 !important; }
+.view-list-members .views-field-field-member-image-new-size .field-more-link .field-general-position {
+  display:none;
+}
+
+
+
+.view-list-members .views-field-field-member-image-new-size .field-more-link div {
+    margin: 0 0 0 4% !important ;
+    display: block !important; 
+
+    padding: 0 !important; 
+    text-align: left !important; 
+    color: white; 
+}
+.view-list-members .views-field-field-member-image-new-size .field-more-link div,
+.view-list-members .views-field-field-member-image-new-size .field-more-link  a {
+  width: 100% !important;
+  height: auto !important;
+}
+.view-list-members .views-field-field-member-image-new-size .field-more-link  a {
+  display: inline-block !important;
+}*/
+
+/*sidebar css
+.accordion-header-active {
+  border-right-style:none !important;
+  border-right-color:rgb(85, 85, 85) !important;
+  border-right-style: none !important;
+  border-right-width: 0px !important;
+  box-shadow: none !important;
+  perspective-origin:329.5px 20px !important;
+  transform-origin: 329.5px 20px !important; 
+  -webkit-transform-origin: 329.5px 20px !important; 
+  -webkit-perspective-origin: 329.5px 20px !important;
+  -webkit-box-shadow: none !important;
+}*/
+
+
+.project-tag-text table {
+  border-collapse:separate;
+  padding: 0px;
+}
+
+.project-tag-title {
+  text-align:center;
+  font-size: 16px;
+}
+
+.project-tag-text {
+  border:1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.project-tag-wrapper { 
+  padding-left: 20px;
+  padding-right:50px;
+  width: 67.5%;
+}
+
+.project-tag-active {
+    font-size:150%;
+}
+/*.project-tag-text td:hover {
+  border-style:solid;
+  -webkit-transition: border-color 1s;
+  border-color: black;
+  border-left:none;
+  border-right:none;
+
+}*/
+/*.project-tag-text .project-tag-active {
+  width:20%;
+  text-align: center;
+  border-style:solid;
+  border-color: black;
+  border-left:none;
+  border-right:none;
+  border-top:none;
+}*/
+.project-tag-text td {
+  width:20%;
+  text-align: center;
+  border-style:none;
+  border-left:none;
+  border-right:none;
+  border-color:grey;
+  border-width:thin;
+}
+
+.project-tag-text table {
+  width: 90%;
+  border-bottom:2px;
+  margin-bottom: 0;
+}
+/* List member */
+.view-list-members .views-row {
+  float: left;
+  width: 210px;
+  height: 270px;
+  margin: 10px 10px 30px 10px;
+}
+
+.view-list-members .views-field-field-member-image-new-size, .view-list-members .views-field-field-member-image-new-size img {
+ /* width:200px;
+  height:200px;*/
+}
+
+.view-list-members .views-field-field-member-image-new-size {
+  position: relative;
+ /* border: 3px solid #bcbec0;*/
+}
+.view-list-members .views-field-field-member-image-new-size:hover {
+ /* border: 3px solid #ae351d;*/
+}
+.view-list-members .views-field-field-member-image-new-size .field-image .field-more-link {
+  display: none;
+  /*opacity: 1;*/
+  /*background: url(../images/view-more-bg.png);*/
+  position: absolute;
+  top: 160px;
+  left: 5px;
+  float: left;
+  width: 100%;
+  height: 60px;
+  text-align: left;
+  z-index: 2;
+}
+
+/*hide the date... sure why it's showing*/
+
+.field-name-field-pub-date {
+  display:none;
+}
+
+.news-item {
+  overflow:hidden;
+}
+
+.views-field-field-body-preview, .views-field-field-body-preview-1 {
+  overflow:hidden;
+}
+
+.tags-type {
+  display:none;
+}
+
+.views-field-field-news-tags-wrapper {
+  background: url(../images/icon-article-tag.png) 0px center no-repeat;
+}
+
+.views-field-field-news-tags-wrapper-events {
+  background: url(../images/icon-article-tag.png) 0px center no-repeat;
+}
+
+.events-tags {
+  margin-left:20px;
+}
+.views-field-field-news-tags {
+  margin-left:20px;
+}
+
+.addtocal {
+    margin: -5px;
+    padding: 5px;
+    width:100%;
+    text-align:center;
+    margin-bottom: 5px;
+    float: right;
+    background: #efefef;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border: 1px solid #cdcdcd;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul.addtocal_menu {
+background: #efefef;
+    width:100%;
+    text-align:center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border: 1px solid #cdcdcd;
+    padding: 5px;
+    list-style-type: none;
+    margin-left: 0px !important;
+    margin-bottom: 0px;
+    position: absolute;
+    display: none;
+    z-index: 50;
+}
+/*.clearfix:after {
+  display:inline;
+  content: ".";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}*/
+.views-field-field-image img {
+  padding: 5px 10px 10px 10px;
+  /*float:left;*/
+}
+
+.featured-news-image img {
+  text-align:center !important;
+  float:left;
+}
+
+.view-list-members .views-field-field-member-image-new-size .field-image .field-alum-years-at-wipac {
+  display:none;
+}
+.view-list-members .views-field-field-member-image-new-size .field-more-link div {
+  display: table-row;
+  width: 48px;
+  height: 12px;
+  /*margin: 70px 5px;*/
+}
+.view-list-members .views-field-field-member-image-new-size .field-more-link .field-name {
+  font-size: 20px
+
+}
+/*.view-list-members .views-field-field-member-image-new-size .field-image img:hover {
+  opacity: .4;
+}*/
+
+input[type='people-search'] {
+  width: 75%;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px #000 solid;
+  background-image: url('../images/search.png');
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  background-position-y: -2px;
+  font-family: 'PT Sans';
+  font-size: 16px;
+  max-width: 280px;
+}
+
+input[type='people-search']:focus::-webkit-input-placeholder { color:transparent; border:none}
+input[type='people-search']:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input[type='people-search']:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input[type='people-search']:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+/*result summary on people directory*/
+#result-summary {
+  padding-left:10px;
+}
+
+.project-tag{
+  cursor: pointer;
+  color: #98b5cd;
+}
+
+.project-tag:hover {
+  color: grey;
+}
+
+.form-item-field-project-tid .bef-checkboxes .highlight {
+  background: white;
+}
+
+.view-list-members .views-field-field-member-image-new-size .field-more-link  a:after {
+  display: block;
+  width: 48px;
+  height: 48px;
+  text-indent: -450px;
+  /*overflow: hidden;*/
+}
+.view-list-members .views-field-field-member-image-new-size .field-more-link { text-transform: uppercase; font-size: 120%; font-weight: bold;color:white;}
+
+.view-list-members .views-field-field-member-image-new-size .field-image .field-more-link, .field-project-name, .field-phone, .field-alum-years  { font-size: 90%; color:#fff}
+.view-list-members .views-field-field-member-image-new-size .field-image .field-position  { text-align: center; font-size: 100%; color:#fff; background-color:#343232;padding-bottom:5px;line-height:1.1em;}
+.view-list-members .views-field-field-member-image-new-size .field-image .field-name  { text-align: center; font-size: 100%; color:#fff; background-color:#343232;border-style:solid;border-top-width:1px;border-bottom:none;border-right:none;border-left:none;border-color:white;padding-top:5px;}
+.view-list-members .views-field-field-member-image-new-size .field-image .field-position-type {
+  display:none;
+  text-align: center;
+  /*position: absolute;*/
+  top: 246px;
+  left: 5px;
+}
+
+.view-list-members .views-field-field-member-image-new-size .field-more-link .field-email {
+  font-size: 75%;
+}
+/*
+
+.block-wipac-people .view-list-members .views-row { 
+  width: 200px ; 
+  clear: none !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+@media (min-device-width: 980px) and (min-width: 980px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+	.view-list-members .views-field-field-member-image-new-size .field-more-link  a {
+	  display: inline-block !important;
+	}
+	.view-list-members .views-field-field-member-image-new-size .field-more-link .field-image .field-name { font-size: 120%; font-weight: bold; display: block; }
+    
+    .view-list-members .views-field-field-member-image-new-size .field-image .field-more-link .field-position, .field-project-name, .field-phone, .field-email { font-size: 75%;}
+	.block-wipac-people .view-list-members .views-row { 
+	  width: 200px ; 
+	}
+	.block-wipac-people .view-list-members .views-field-field-member-image-new-size,
+	.block-wipac-people .view-list-members .views-field-field-member-image-new-size img {
+	  width: 110px ;
+	  height: 150px ; 
+	}
+
+}*/
+
+.block-wipac-people .view-list-members .views-field-field-member-image-new-size,
+.block-wipac-people .view-list-members .views-field-field-member-image-new-size img {
+  width: 110px ;
+  height: 150px ; 
+}
+
+.block-wipac-people .view-list-members .views-row-1,
+.block-wipac-people .view-list-members .views-row-5,
+.block-wipac-people .view-list-members .views-row-9,
+.block-wipac-people .view-list-members .views-row-13 {
+  margin-left: 10px;
+  clear: none !Important;
+
+
+}
+
+/* PUBLICATIONS PAGES/BLOCKS */
+.wipac-pubs-search 
+{
+
+
+}
+.wipac-pubs-display-page
+{ 
+
+}
+
+.proj-on-pubs {
+  display:inline;
+  margin-left:1em;
+}
+
+.form-item-pdate-min label, .form-item-pdate-max label {
+  text-transform:capitalize;
+}
+
+.views-widget-filter-field_project_tid {float: right;}
+/*
+.views-widget-filter-field_tags_tid {border: 10px solid red;}
+.views-widget-filter-field_pubtype_tid {border: 10px solid red;}
+.views-widget-filter-field_pubdate_value {border: 10px solid red;}
+.views-submit-button {border: 10px solid red;}
+.views-reset-button {border: 10px solid red;}
+*/
+
+/* UNSET global styles */
+
+.more-link {
+  text-align:center;
+  margin-top:-.5em;
+  margin-bottom:1.5em;
+}
+
+.main-page-banner img {
+  height: auto;
+  width: 100%;
+}
+.main-page-logos {
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.node .field-type-taxonomy-term-reference .field-items .field-item { padding-left: 0; }
+
+/* without this rule, the top image on the landing page (e.g. learn, science) will not be
+ * responsive and will usually overflow the page/container bounds
+ */
+.field-slideshow { padding-right: 20px;margin-right:20px;margin-bottom:20px;max-width: 100%; max-device-width: 100% !important; height:auto !important;}
+.view-publications .date-display-single { font-weight: bold; color: #aaa; }
+.view-publications .views-field-title { font-size: 100%; font-style: italic; }
+.views-field .views-field-field-authors { font-size: 100%; }
+
+.landing-pg-img {
+ /*   width: 360px;
+    height: 300px;*/
+    background: url(../images/dark-blue/view-more-bg.png);
+    margin-right:13px;
+    max-width:360px;
+}
+
+
+.landing-pg-img-feat-gall {
+ /*   width: 360px;
+    height: 300px;*/
+    background: url(../images/dark-blue/view-more-bg.png);
+    margin-right:13px;
+    max-width:100%;
+    float:left;
+    width:auto;
+}
+
+.landing-pg-img-feat-gall a img{
+  height:auto;
+  max-width:100%;
+}
+.landing-page-layout h2 {
+  margin-top:10px;
+}
+
+ul.simple-pagination {
+    list-style: none;
+}
+
+.simple-pagination {
+    display: block;
+    overflow: hidden;
+    padding: 10px 5px 5px 0;
+    margin: 0;
+}
+
+.simple-pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.simple-pagination li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/*------------------------------------*\
+    Dark Theme Styles
+\*------------------------------------*/
+
+.dark-theme a, .dark-theme span {
+    float: left;
+    color: #CCC;
+    font-size:14px;
+    line-height:24px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #222;
+    min-width: 14px;
+    padding: 0 7px;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    background: #555; /* Old browsers */
+    background: -moz-linear-gradient(top, #555 0%, #333 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555), color-stop(100%,#333)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #555 0%,#333 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #555 0%,#333 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #555 0%,#333 100%); /* IE10+ */
+    background: linear-gradient(top, #555 0%,#333 100%); /* W3C */
+}
+
+.dark-theme a:hover {
+    text-decoration: none;
+    background: #444;
+}
+
+.dark-theme .current {
+    background: #222;
+    color: #FFF;
+    border-color: #000;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.2), 0 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    cursor: default;
+}
+
+.dark-theme .ellipse {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: default;
+}
+.body-tag-wrapper {
+  overflow:hidden;
+}
+
+/*tags results css*/
+
+.tags-display {
+  padding: 15px
+}
+.field-project-url-projects-page {
+  float:left;
+}
+.field-project-url-projects-page a:link {
+  color:#fff;
+}
+.field-project-url-projects-page a:hover {
+  color:#fff;
+}
+.field-project-url-projects-page a:visited {
+  color:#fff;
+}
+.views-exposed-form label {
+  font-weight: bold;
+  color: #040404;
+}
+/*past visitors css*/
+.views-table {
+  font-size:80%;
+}
+.views-align-left {
+  padding: 0px 5px;
+}
+
+.views-table.cols-5 h2 {
+  text-align:left;
+}
+
+/*all menu*/
+ul.nice-menu ul li {
+  width:10em;
+}
+
+/*deco specific css*/
+
+#block-block-75 {
+  margin-bottom: 30px;
+}
+
+#block-nice-menus-2 {
+  margin-top:-20px;
+}
+
+#block-block-100, #block-block-109 {
+  text-align:right;
+  white-space:nowrap;
+  margin-bottom:.5em;
+}
+
+#nice-menu-2 {
+ margin-top:4em; 
+}
+
+/*menu*/
+#nice-menu-1 li {
+  margin:0px
+}
+
+a[id^="sidr"], a[id*="-button"] {
+  width:45px;
+  float:right;
+}
+
+/* this css produces the three lines used for the mobile menu 
+/* taken from the google nexus template, Created by Codrops:
+/* http://www.codrops.com  */
+a[id^="sidr"]:before, a[id*="-button"]:before {
+  margin-left: -15px;
+  vertical-align: -20px;
+  width: 45px;
+  height: 4px;
+  background: #5f6f81;
+  box-shadow: 0 4px white, 0 -8px #5f6f81, 0 -12px white, 0 -16px #5f6f81;
+  content: '';
+  display: inline-block;
+  text-align: center;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'ecoicons';
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* this is the actual Menu link that hides behind
+/* the menu bars, uses absolute positioning */
+a[id^="sidr"] span, a[id*="-button"]  span {
+  width:45px;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  float:right;
+  position:absolute;
+  top:7px;
+  right:3px;
+}
+
+.region-menu-inner {
+  margin-top:10px;
+}
+
+/*align the mobile menu to the right*/
+.grid-11,.grid-10 {
+  text-align:right;
+}
+
+/*float the logo to hte left*/
+.grid-4.region.region-branding {
+  float:left;
+}
+
+/*set width for sidebar menu
+.grid-4.region.region-sidebar-first {
+  width:150px;
+}
+*/
+/*twitter button styles*/
+.icon-twitter-sign:before {
+  font-size:2em !important;
+}
+
+/*generalize user input */
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+  font-family: 'PT Sans';
+}
+
+#one_col_img img{
+  height: auto;
+  width:100%;
+}
+
+.holds-the-iframe {
+  background:url(../images/loader.gif) center center no-repeat;
+}
+
+/*portfolio main page css*/
+.projects-main-page-wrapper {
+ background: url(../images/dark-blue/view-more-bg.png);
+  
+}
+.nolinkhere {
+   pointer-events: none;
+   cursor: default;
+   color: #000 !important;
+}
+
+.nodisplay {
+  display:none;
+}
+
+/*override main panel colum on news page
+  so that news items on small screens fill up
+  the screen and not just 70%*/
+@media screen and (max-width: 596px){
+  .panel-col-seventy {
+    width:100%;
+  }
+}
+
+/*remove gripple from webform*/
+.resizable-textarea > .grippie {
+  display:none !important;
+}
+
+/*override region branding margin*/
+.zone-branding.container-16 .grid-4 .region-branding-inner .block-85 {
+  margin-bottom:25px;
+}
+
+/*override omega responsive css*/
+/*narrow layout*/
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape){
+  .zone-branding.container-16 .grid-4 {
+    width: 300px !important;
+  }
+  .zone-branding.container-16 .grid-11 {
+    width: 335px !important;
+  }
+}
+
+/*normal layout*/
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) {
+  .zone-branding.container-16 .grid-4 {
+    width: 300px !important;
+  }
+  .zone-branding.container-16 .grid-11 {
+    width: 600px !important;
+  }
+}
+
+/*wide layout*/
+@media all and (min-width: 1220px) {
+  .zone-branding.container-16 .grid-4 {
+    width: 360px !important;
+  }
+  .zone-branding.container-16 .grid-11 {
+    width: 745px !important;
+  }
+}
+
+/*adjusting menu padding*/
+.block-nice-menus ul.nice-menu li {
+  padding:.5rem !important;
+}
